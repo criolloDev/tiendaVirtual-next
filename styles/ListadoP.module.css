@@ -1,0 +1,68 @@
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 10px 10px 2px rgba(0, 0, 0, 0.1);
+    border: 6px solid transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 420px;
+    background-color: #fff;
+}
+
+.producto:hover {
+    border: 6px solid #00f48657;
+}
+
+.producto__img img {
+    width: 310px;
+}
+
+.producto__footer {
+    padding: 1rem;
+}
+
+.producto__footer h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #1a202c;
+    font-family: Helvetica, sans-serif;
+}
+
+.producto__footer p {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.555);
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.producto__footer .price {
+    font-size: 2rem;
+    color: #1a202c;
+}
+
+.bottom {
+    width: 100%
+}
+
+.bottom a {
+    background-color: #08a05c;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    padding: 0.4rem;
+    margin-left: 2.3rem;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 80%;
+    display: block;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.bottom div a:hover {
+    color: white;
+}

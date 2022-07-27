@@ -1,0 +1,35 @@
+.footer .box_container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.footer .box_container .box {
+    text-align: center;
+}
+
+.footer .box_container .box i {
+    font-size: 1.2rem;
+    line-height: 3rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: #08a05c;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.footer .box_container .box h3 {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.footer .box_container .box p {
+    line-height: 2;
+    font-size: 1rem;
+    color: #666;
+}

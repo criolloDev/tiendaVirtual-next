@@ -1,0 +1,131 @@
+.detalles {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 8rem 0 0 3.2rem;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 700px) {
+    .detalles {
+        padding: 7rem 1rem 0 1.6rem;
+    }
+}
+.detalles h2 {
+    font-size: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    font-family: Helvetica, sans-serif;
+    color: #1a202c;
+}
+
+.detalles .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #08a05c;
+    margin-bottom: 0.4rem;
+}
+
+.detalles .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 1rem;
+    max-width: 350px;
+}
+
+.detalles .grid>.nuevo,
+.tamano {
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.detalles .grid .nuevo {
+    background-color: #08a05c;
+}
+
+.detalles .grid .tamano {
+    background-color: #f1365b;
+    display: flex;
+}
+
+.detalles .grid .tamano p {
+    margin-left: 1rem;
+}
+
+.detalles .grid .tamano select {
+    border: none;
+    outline: 0;
+    font-size: 1.4rem;
+    background-color: #f1365b;
+    color: white;
+    cursor: pointer;
+}
+
+.detalles button {
+    width: 350px;
+    margin: 0.8rem 0 0 0;
+    padding: 0.8rem 0.5rem;
+    border: none;
+    outline: 0;
+    background-color: #3033d3;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.detalles img {
+    height: 470px;
+    object-fit: contain;
+    margin-top: -7rem;
+    z-index: -1;
+}
+
+.detalles input {
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.detalles .description {
+    font-size: 1rem;
+    max-width: 1300px;
+    width: 100%;
+    letter-spacing: 1px;
+    color: #5f5d5d;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+.detalles .description b {
+    font-size: 1.4rem;
+    color: #30333a;
+}
+
+.productos {
+    padding: 5rem 3rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 3rem 1rem;
+    box-sizing: border-box;
+}
+
+.relacionados {
+    text-align: center;
+    background-color: #2e2e2e;
+    color: white;
+    max-width: 350px;
+    width: 100%;
+    margin: 5rem auto -2rem auto;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+}
