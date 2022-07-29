@@ -7,6 +7,15 @@ function MyApp({ Component, pageProps }) {
   const [productos, setProductos] = useState([]);
   const [carrito, setCarrito] = useState([]);
 
+  useEffect(() =>{
+		const carritoLS = JSON.parse(localStorage.getItem("carrito")) ?? [];
+    setCarrito(carritoLS);
+	},[])
+
+  useEffect(() => {
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+  }, [carrito])
+
   useEffect(() => {
     const producto = Data.items
     if (producto) {
@@ -40,7 +49,7 @@ function MyApp({ Component, pageProps }) {
       return zapatilla;
     })
     setCarrito(carritoActualizado);
-  } 
+  }
 
   const eliminarProducto = (id) => {
     const carritoActualizado = carrito.filter((zapatilla) => zapatilla.id !== id);
@@ -53,7 +62,7 @@ function MyApp({ Component, pageProps }) {
     productos={productos}
     carrito={carrito}
     agregarAlCarrito={agregarAlCarrito}
-    actualizarCantidad = {actualizarCantidad}
+    actualizarCantidad={actualizarCantidad}
     eliminarProducto={eliminarProducto}
   />
 }
