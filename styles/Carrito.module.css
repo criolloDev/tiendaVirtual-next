@@ -12,6 +12,12 @@
     padding: 7rem 0 4rem 0;
     letter-spacing: 0.5rem;
 }
+@media (max-width:768px) {
+    .heading {
+        font-size: 2rem;
+        letter-spacing: 0.4rem;
+    }
+}
 
 .contenido {
     display: grid;
@@ -21,16 +27,15 @@
 @media (min-width:768px) {
     .contenido {
         grid-template-columns: 3fr 2fr;
-        align-items: flex-start;
+        align-items:flex-start;
     }
-}
-
-.carrito {
-    padding: 1rem 0;
 }
 
 .carrito h2{
     text-align: center;
+    letter-spacing: 0.2rem;
+    margin-left: -1.8rem;
+    margin-bottom: 1rem;
 }
 
 .producto {
@@ -41,6 +46,11 @@
     border-bottom: 1px solid #cfcfcf;
     padding: 3rem 0;
     position: relative;
+}
+@media (max-width:768px) {
+    .producto {
+        width: 320px;
+    }
 }
 
 .producto:last-of-type {
@@ -55,6 +65,11 @@
     font-weight: 700;
     font-size: 1.5rem;
 }
+@media (max-width:768px) {
+    .nombre {
+        font-size: 1rem;
+    }
+}
 
 .cantidad {
     display: flex;
@@ -67,6 +82,11 @@
     margin: 0;
     font-weight: bold;
     font-size: 1.1rem;
+}
+@media (max-width:768px) {
+    .cantidad p {
+        font-size: 1rem;
+    }
 }
 
 .select {
@@ -83,15 +103,31 @@
     color: black;
     font-size: 1.1rem;
 }
+@media (max-width:768px) {
+    .precio {
+        font-size: 1rem;
+    }
+}
 
 .subtotal {
     font-weight: 700;
     font-size: 1.1rem;
 }
+@media (max-width:768px) {
+    .subtotal {
+        font-size: 1rem;
+    }
+}
 
 .subtotal span {
     font-size: 1.1rem;
 }
+@media (max-width:768px) {
+    .subtotal span {
+        font-size: 1rem;
+    }
+}
+
 
 .eliminar {
     all: unset;
@@ -110,10 +146,23 @@
     padding: 3rem;
     border-radius: 1rem;
 }
+@media (max-width:768px) {
+    .resumen {
+        width: 250px;
+        margin-top: -5rem;
+        margin-bottom: -4rem;
+    }
+}
+
 
 .resumen h3 {
     font-size: 1.5rem;
     text-align: center;
+}
+@media (max-width:768px) {
+    .resumen h3 {
+        font-size: 1.2rem;
+    }
 }
 
 .resumen p{
@@ -121,6 +170,11 @@
     margin: 1rem 0rem;
     font-weight: bold;
     text-align: center;
+}
+@media (max-width:768px) {
+    .resumen p {
+        font-size: 1rem;
+    }
 }
 
 .resumen button {
@@ -136,6 +190,14 @@
     border-radius: 4px;
     cursor: pointer;
     margin-left: 1.1rem;
+}
+@media (max-width:768px) {
+    .resumen button {
+        width: 195px;
+        display: flex;
+        justify-content: center;
+        padding: 0.4rem 0.3rem;
+    }
 }
 
 .resumen button i {

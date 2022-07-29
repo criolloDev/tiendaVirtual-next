@@ -5,7 +5,7 @@
     padding: 8rem 0 0 3.2rem;
     box-sizing: border-box;
 }
-@media only screen and (max-width: 700px) {
+@media (max-width: 700px) {
     .detalles {
         padding: 7rem 1rem 0 1.6rem;
     }
@@ -16,6 +16,11 @@
     max-width: 1000px;
     font-family: Helvetica, sans-serif;
     color: #1a202c;
+}
+@media (max-width:768px) {
+    .detalles h2 {
+        font-size: 1.5rem;
+    }
 }
 
 .detalles .price {
@@ -77,6 +82,11 @@
     border-radius: 4px;
     cursor: pointer;
 }
+@media (max-width:768px) {
+    .detalles button {
+        width: 300px;
+    }
+}
 
 .detalles img {
     height: 470px;
@@ -91,15 +101,30 @@
     width: 100%;
     margin-bottom: 2rem;
 }
+@media (max-width:600px) {
+    .detalles input {
+        margin-top: -5rem;
+    }
+}
+@media (min-width:800px) {
+    .detalles input {
+        max-width: 680px;
+    }
+}
 
 .detalles .description {
     font-size: 1rem;
     max-width: 1300px;
-    width: 100%;
+    width: 95%;
     letter-spacing: 1px;
     color: #5f5d5d;
     margin: 0 auto;
     font-weight: 500;
+}
+@media (min-width:800px) {
+    .detalles .description {
+        width: 90%;
+    }
 }
 
 .detalles .description b {

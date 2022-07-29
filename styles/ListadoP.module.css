@@ -8,6 +8,14 @@
     border-radius: 5px;
     height: 420px;
     background-color: #fff;
+    justify-content: center;
+}
+@media (max-width:500px) {
+    .producto {
+        height: 350px;
+        width: 285px;
+        
+    }
 }
 
 .producto:hover {
@@ -16,6 +24,11 @@
 
 .producto__img img {
     width: 310px;
+}
+@media (max-width:768px) {
+    .producto__img img {
+        width: 250px;
+    }
 }
 
 .producto__footer {
@@ -28,6 +41,11 @@
     color: #1a202c;
     font-family: Helvetica, sans-serif;
 }
+@media (max-width:768px) {
+    .producto__footer h1 {
+        font-size: 1.2rem;
+    }
+}
 
 .producto__footer p {
     font-weight: 700;
@@ -39,6 +57,11 @@
 .producto__footer .price {
     font-size: 2rem;
     color: #1a202c;
+}
+@media (max-width:768px) {
+    .producto__footer .price {
+        font-size: 1.2rem;
+    }
 }
 
 .bottom {
@@ -61,6 +84,12 @@
     color: white;
     font-weight: 700;
     text-decoration: none;
+}
+@media (max-width:768px) {
+    .bottom a {
+        margin-left: 1.5rem;
+        font-size: 1.1rem;
+    }
 }
 
 .bottom div a:hover {

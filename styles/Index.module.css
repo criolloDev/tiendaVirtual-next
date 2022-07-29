@@ -17,6 +17,12 @@
     text-align: center;
     opacity: 0.8;
 }
+@media (max-width:768px) {
+    .inicio .text1 {
+        font-size: 3.5rem;
+        width: 20rem;
+    }
+}
 
 .servicios {
     min-height: 30vh;

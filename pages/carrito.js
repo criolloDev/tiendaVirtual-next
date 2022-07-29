@@ -31,8 +31,8 @@ const Carrito = ({ carrito, actualizarCantidad, eliminarProducto }) => {
                                     <div>
                                         <Image
                                             layout="responsive"
-                                            width={50}
-                                            height={50}
+                                            width={100}
+                                            height={120}
                                             src={producto.imagen}
                                             alt={producto.nombre}
                                         />
